@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.politeknikharber.utsMobileJefri">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.uts_mobile_jefri">
+        <activity android:name="id.ac.politeknikharber.utsMobileJefri.login.LoginActivity"></activity>
+
+        <activity
+            android:name="id.ac.politeknikharber.utsMobileJefri.calculator.HasilKalkuator"
+            android:parentActivityName="id.ac.politeknikharber.utsMobileJefri.calculator.Calculator" />
+
+        <activity
+            android:name="id.ac.politeknikharber.utsMobileJefri.calculator.Calculator"
+            android:parentActivityName="id.ac.politeknikharber.utsMobileJefri.MainActivity" />
+
+        <activity android:name="id.ac.politeknikharber.utsMobileJefri.about.TentangUTS"
+            android:parentActivityName="id.ac.politeknikharber.utsMobileJefri.MainActivity"/>
+        <activity
+            android:name="id.ac.politeknikharber.utsMobileJefri.SplashScreen"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="id.ac.politeknikharber.utsMobileJefri.MainActivity" />
+    </application>
+
+</manifest>
